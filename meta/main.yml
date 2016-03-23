@@ -1,0 +1,25 @@
+galaxy_info:
+  author: hedii
+  description: Youtube-dl installation for Linux/UNIX.
+  company: hedii
+  license: MIT
+  min_ansible_version: 2.0
+  platforms:
+  - name: EL
+    versions:
+    - all
+  - name: GenericUNIX
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  - name: GenericLinux
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+  galaxy_tags:
+    - system
+dependencies: []

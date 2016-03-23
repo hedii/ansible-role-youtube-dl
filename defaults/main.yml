@@ -1,0 +1,7 @@
+---
+# The path where youtube-dl executable will be installed.
+# It is recommended to not change this path.
+youtubedl_executable_path: "/usr/local/bin/youtube-dl"
+
+# Do we need to update youtube-dl if it is already installed?
+youtubedl_update: false

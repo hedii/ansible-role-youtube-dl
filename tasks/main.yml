@@ -1,0 +1,15 @@
+---
+- name: Check if youtube-dl is already installed
+  stat: path={{ youtubedl_executable_path }}
+  register: youtubedl_bin
+
+- name: Download from source move to executables folder and set permissions
+  get_url: url=https://yt-dl.org/latest/youtube-dl
+           dest={{ youtubedl_executable_path }}
+           mode=0755
+           force=yes
+  when: not youtubedl_bin.stat.exists
+
+- name: Update youtube-dl
+  command: youtube-dl -U
+  when: youtubedl_bin.stat.exists and youtubedl_update
