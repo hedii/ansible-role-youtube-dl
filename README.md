@@ -23,7 +23,7 @@ Available variables are listed below, along with default values (see `defaults/m
 youtubedl_executable_path: "/usr/local/bin/youtube-dl"
 
 # Do we need to update youtube-dl if it is already installed?
-youtubedl_update: false`
+youtubedl_update: false
 ```
 
 
