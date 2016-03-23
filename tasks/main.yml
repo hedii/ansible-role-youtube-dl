@@ -4,7 +4,7 @@
   register: youtubedl_bin
 
 - name: Download from source move to executables folder and set permissions
-  get_url: url=https://yt-dl.org/latest/youtube-dl
+  get_url: url=http://yt-dl.org/latest/youtube-dl
            dest={{ youtubedl_executable_path }}
            mode=0755
            force=yes
