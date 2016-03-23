@@ -1,6 +1,8 @@
 Ansible role: youtube-dl
 ========================
 
+[![Build Status](https://travis-ci.org/hedii/ansible-role-youtube-dl.svg?branch=master)](https://travis-ci.org/hedii/ansible-role-youtube-dl)
+
 Installs [youtube-dl](https://github.com/rg3/youtube-dl) on any Linux or UNIX system.
 
 Youtube-dl is a small command-line program to download videos from YouTube.com and other video platforms.
