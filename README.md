@@ -15,12 +15,14 @@ Role Variables
 
 Available variables are listed below, along with default values (see `defaults/main.yml`)
 
-    # The path where youtube-dl executable will be installed.
-    # It is recommended to not change this path.
-    youtubedl_executable_path: "/usr/local/bin/youtube-dl"
-    
-    # Do we need to update youtube-dl if it is already installed?
-    youtubedl_update: false
+```yml
+# The path where youtube-dl executable will be installed.
+# It is recommended to not change this path.
+youtubedl_executable_path: "/usr/local/bin/youtube-dl"
+
+# Do we need to update youtube-dl if it is already installed?
+youtubedl_update: false`
+```
 
 
 Dependencies
@@ -30,10 +32,11 @@ None.
 
 Example Playbook
 ----------------
-
-    - hosts: servers
-      roles:
-         - { role: hedii.youtube-dl }
+```yml
+  - hosts: servers
+  roles:
+    - { role: hedii.youtube-dl }
+```
 
 License
 -------
