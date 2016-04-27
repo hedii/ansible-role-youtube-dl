@@ -12,4 +12,8 @@
 
 - name: Update youtube-dl
   command: youtube-dl -U
+  register: youtubedl_update_out
   when: youtubedl_bin.stat.exists and youtubedl_update
+  changed_when: "'Updated youtube-dl.' in youtubedl_update_out.stdout"
+  failed_when: "'ERROR:' in youtubedl_update_out.stdout"
+  ignore_errors: true
